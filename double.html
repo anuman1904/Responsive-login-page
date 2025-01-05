@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="double.css">
+  <script src="double.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+  <fieldset id="loginForm">
+    <legend id="italic"><span id="smallcaps">Login</span></legend>
+    <form action="" id="loginForm">
+      <div id="input-container">
+        <input type="text" name="user" id="user" placeholder="">
+        <label for="">Username</label>
+      </div>
+      <div id="input-container">
+        <input type="password" name="pass" id="pass" placeholder=" ">
+        <label for="pass">Password</label>
+      </div>
+      <button id="validate" type="button" onsubmit="validateLogin()">Login</button>
+    </form>
+    <span id="quest">don't have an account?</span>
+    <button type="button" id="swap" onclick="switchForm()">Sign Up</button>
+  </fieldset>
+  <fieldset id="signupForm">
+    <legend id="italic"><span id="smallcaps">Sign Up</span></legend>
+    <form action="" id="loginForm">
+      <div id="input-container">
+        <input type="text" name="user" id="user" placeholder="">
+        <label for="">Username</label>
+      </div>
+      <div id="input-container">
+        <input type="password" name="pass" id="pass" placeholder=" ">
+        <label for="pass">Password</label>
+      </div>
+      <button id="validate" type="button" onsubmit="validateSignup()">Sign up</button>
+
+    </form>
+    <span id="quest">already have an account?</span>
+    <button type="button" onclick="switchLogin()">Login</button>
+  </fieldset>
+</body>
+
+</html>
